@@ -28,8 +28,6 @@ p, strong, b {
   font-family: 'Roboto', sans-serif;
 }
 
-.pagination-wrapper {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
+.pagination-wrapper, .progress, .alert, #confirmation {
+  margin: 15px;
 }
