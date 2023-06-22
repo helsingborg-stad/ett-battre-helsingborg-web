@@ -28,6 +28,6 @@ p, strong, b {
   font-family: 'Roboto', sans-serif;
 }
 
-.pagination-wrapper, .progress, .alert, #confirmation {
+.pagination-wrapper, .progress, #confirmation {
   margin: 15px;
 }
