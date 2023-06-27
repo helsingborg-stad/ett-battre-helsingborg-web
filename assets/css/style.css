@@ -31,3 +31,11 @@ p, strong, b {
 .pagination-wrapper, .progress, #confirmation {
   margin: 15px;
 }
+
+#simpliform .c-button__filled--primary {
+  color: #fff;
+}
+
+#simpliform .c-button__filled--default {
+    color: #3d3d3d;
+}
