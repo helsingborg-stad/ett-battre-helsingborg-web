@@ -30,7 +30,7 @@ window.onload = function () {
     }
 
     function removeClasses(element) {
-      element.classList.remove('btn', 'btn-primary');
+      element.classList.remove('btn', 'btn-primary', 'btn-default');
     }
 
     nextTick().then(function () {
