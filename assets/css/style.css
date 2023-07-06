@@ -30,7 +30,8 @@ p, strong, b {
 }
 
 .pagination-wrapper, .progress, #confirmation, .alert-danger {
-  margin: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .pagination-wrapper {
@@ -39,6 +40,10 @@ p, strong, b {
 
 .prev-btn-wrapper {
   display: none;
+}
+
+#simpliform {
+  padding-top: 15px;
 }
 
 #simpliform .pagination-wrapper .btn-primary {
