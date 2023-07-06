@@ -45,9 +45,12 @@ p, strong, b {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   color: #fff;
-  background-color: #ae0b05;
+  background-color: #76232F;
   width: 100%;
   padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(183, 183, 183, 0.25);
+  border: none;
 }
 
 #simpliform .pagination-wrapper .btn-primary svg {
