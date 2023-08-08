@@ -29,6 +29,11 @@ p, strong, b {
   font-family: 'Roboto', sans-serif;
 }
 
+.pagination-wrapper, .progress, #confirmation, .alert-danger {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .pagination-wrapper {
   display: block;
 }
@@ -38,11 +43,7 @@ p, strong, b {
 }
 
 #simpliform {
-  padding-top: 16px;
-}
-
-#simpliform .form-field {
-  padding: 0;
+  padding-top: 15px;
 }
 
 #simpliform .pagination-wrapper .btn-primary {
