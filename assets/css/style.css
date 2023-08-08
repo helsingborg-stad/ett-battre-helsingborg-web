@@ -37,6 +37,10 @@ p, strong, b {
   display: none;
 }
 
+#simpliform {
+  padding-top: 16px;
+}
+
 #simpliform .form-field {
   padding: 0;
 }
