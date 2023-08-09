@@ -50,13 +50,13 @@ p, strong, b {
 #simpliform .form-control {
   height: 55px;
   border-radius: 10px;
-  border-color: #EDEDED;
+  border-color: #8E8E8E;
   box-shadow: none;
 }
 
 #simpliform .panel {
   border-radius: 10px;
-  border-color: transparent;
+  border-color: #8E8E8E;
   box-shadow: none;
 }
 
