@@ -58,6 +58,16 @@ p, strong, b {
   border-color: none;
 }
 
+#simpliform .alert-info {
+  background-color: #D6F5FF;
+  border-color: none;
+  color: #000;
+}
+
+#simpliform .alert {
+  border-radius: 10px;
+}
+
 #simpliform .pagination-wrapper .btn-primary {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
