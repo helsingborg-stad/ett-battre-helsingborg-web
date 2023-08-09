@@ -48,7 +48,14 @@ p, strong, b {
 }
 
 #simpliform .form-control {
-  height: 46px;
+  height: 55px;
+  border-radius: 10px;
+  border-color: #EDEDED;
+}
+
+#simpliform .panel {
+  border-radius: 10px;
+  border-color: none;
 }
 
 #simpliform .pagination-wrapper .btn-primary {
