@@ -51,11 +51,13 @@ p, strong, b {
   height: 55px;
   border-radius: 10px;
   border-color: #EDEDED;
+  box-shadow: none;
 }
 
 #simpliform .panel {
   border-radius: 10px;
   border-color: transparent;
+  box-shadow: none;
 }
 
 #simpliform .alert-info {
