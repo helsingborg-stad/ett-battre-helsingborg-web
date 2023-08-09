@@ -55,12 +55,12 @@ p, strong, b {
 
 #simpliform .panel {
   border-radius: 10px;
-  border-color: none;
+  border-color: transparent;
 }
 
 #simpliform .alert-info {
   background-color: #D6F5FF;
-  border-color: none;
+  border-color: #D6F5FF;
   color: #000;
 }
 
