@@ -45,7 +45,7 @@ p, strong, b {
   display: none !important;
 }
 
-#simpliform {
+.step:not(.step-2) {
   padding-top: 32px;
   padding-bottom: 32px;
 }
