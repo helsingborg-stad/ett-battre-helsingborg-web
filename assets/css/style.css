@@ -93,9 +93,14 @@ p, strong, b {
   display: none;
 }
 
-/* location step */
+/* Location step */
 
 #viewDiv {
+  margin-bottom: 16px !important;
   height: 500px !important;
+}
+
+#simpliform .field-map {
+  padding: 0;
 }
 
