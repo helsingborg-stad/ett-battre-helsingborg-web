@@ -28,7 +28,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-p, strong, b {
+p, strong, b, h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -55,6 +55,12 @@ p, strong, b {
 
 .step-2 > .alert {
   margin-top: 32px;
+}
+
+#simpliform .step-title h3 {
+    text-align: center;
+    font-weight: 700 !important;
+    margin-bottom: 40px;
 }
 
 #simpliform .form-control {
