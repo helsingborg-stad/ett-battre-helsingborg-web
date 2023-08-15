@@ -53,6 +53,10 @@ p, strong, b {
   padding-top: 32px;
 }
 
+.step-2 > .alert {
+  margin-top: 32px;
+}
+
 #simpliform .form-control {
   height: 55px;
   border-radius: 10px;
