@@ -57,10 +57,12 @@ p, strong, b, h1, h2, h3, h4 {
   margin-top: 32px;
 }
 
-#simpliform .step-title h3 {
+#simpliform .step-title h3, #simpliform #confirmation h1 {
     text-align: center;
     font-weight: 700 !important;
-    margin-bottom: 40px;
+    margin-top: 22px !important;
+    margin-bottom: 40px !important;
+    font-size: 24px !important;
 }
 
 #simpliform .form-control {
