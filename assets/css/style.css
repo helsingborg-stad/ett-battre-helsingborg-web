@@ -49,7 +49,7 @@ p, strong, b {
   padding-bottom: 32px;
 }
 
-.step:not(.step-2) {
+.step:not(.step-2), #confirmation {
   padding-top: 32px;
 }
 
@@ -80,7 +80,7 @@ p, strong, b {
   border-radius: 10px;
 }
 
-#simpliform .pagination-wrapper .btn-primary {
+#simpliform .pagination-wrapper .btn-primary, #simpliform .btn-success {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   color: #fff;
@@ -92,12 +92,20 @@ p, strong, b {
   border: none;
 }
 
-#simpliform .pagination-wrapper .btn-primary:hover {
+#simpliform .pagination-wrapper .btn-primary:hover, #simpliform .btn-success:hover {
     background-color: #922C3A !important;
 }
 
-#simpliform .pagination-wrapper .btn-primary svg {
+#simpliform .pagination-wrapper .btn-primary svg, #simpliform .btn-success svg {
   display: none;
+}
+
+#simpliform #confirmation .checkbox {
+  margin-bottom: 24px;
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #8E8E8E;
 }
 
 /* Location step */
