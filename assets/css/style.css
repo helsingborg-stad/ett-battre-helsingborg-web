@@ -45,11 +45,11 @@ p, strong, b, h1, h2, h3, h4 {
   display: none !important;
 }
 
-.step {
+.step, #confirmation {
   padding-bottom: 32px;
 }
 
-.step:not(.step-2), #confirmation {
+.step:not(.step-2), #confirmation, .success-message {
   padding-top: 32px;
 }
 
