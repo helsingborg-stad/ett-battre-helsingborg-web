@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Ett Bättre Helsingborg - Web Application</title>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <script src="https://helsingborgs-stad-sbf.lime-forms.se/js/ce/latest"></script>
+    <script src="assets/js/device.js"></script>
+    <script src="assets/js/toolbar.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css" media="all">
   </head>
 <body>
+
+  <div id="header">
+    <div id="app-banner" class="c-notice u-display--none" aria-hidden="true">
+      <span class="c-notice__text">
+        Ladda ner Ett Bättre Helsingborg till mobilen.
+      </span>
+      <a id="app-banner-link" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#getapp" aria-label="Hämta app">
+        <span class="c-button__label">
+          <span class="c-button__label-text">Hämta app</span>
+        </span>
+      </a>
+    </div>
+
+    <div id="toolbar" class="c-toolbar u-display--none-1" aria-hidden="true">
+      <a id="back-button" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#back" aria-label="Gå till förgående">
+        <span class="c-button__label">
+          <span class="c-button__label-text">Tillbaka</span>
+        </span>
+      </a>
+      <a id="cancel-button" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#back" aria-label="Avbryt">
+        <span class="c-button__label">
+          <span class="c-button__label-text">Avbryt</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
   <lime-form form-id="U3X0lhXaQ4B2dBs2rk5K"></lime-form>
 </body>
 </html>
