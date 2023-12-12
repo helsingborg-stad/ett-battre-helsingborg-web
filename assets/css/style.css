@@ -70,7 +70,8 @@ p, strong, b {
   font-weight: 700 !important;
 }
 
-#simpliform .step-title h3 {
+#simpliform .step-title h3,
+#simpliform .confirmation h1 {
   color: #76232f !important;
   font-size: 32px !important
 }
@@ -135,7 +136,7 @@ body #simpliform #confirmation .checkbox {
 
 #simpliform .pagination-wrapper .btn-primary:hover,
 #simpliform .btn-success:hover {
-    background-color: #922C3A !important;
+  background-color: #922C3A !important;
 }
 
 #simpliform .pagination-wrapper .btn-primary svg,
@@ -143,12 +144,9 @@ body #simpliform #confirmation .checkbox {
   display: none;
 }
 
-#simpliform #confirmation .checkbox {
-  margin-bottom: 24px;
-  background: #fafafa;
-  padding: 16px;
-  border-radius: 10px;
-  border: 1px solid #8E8E8E;
+/* Confirmation */
+body #simpliform #confirmation {
+  margin-top: 32px;
 }
 
 /* Location step */
@@ -211,6 +209,13 @@ body #simpliform #confirmation .checkbox {
 
 #simpliform .alert .h5.no-m-t + ul:empty {
   display: none;
+}
+
+#simpliform .alert a,
+#simpliform .alert a:hover,
+#simpliform .alert a:active,
+#simpliform .alert a:visited {
+  color: inherit;
 }
 
 /*

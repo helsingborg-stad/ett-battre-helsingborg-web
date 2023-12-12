@@ -40,7 +40,6 @@ class MobileAppManager {
    * @returns {boolean} - True if the user is on an iOS device, false otherwise.
    */
   static isIOS(userAgent) {
-    return true;
     return /iPad|iPhone|iPod/i.test(userAgent);
   }
 
