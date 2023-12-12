@@ -53,6 +53,20 @@ p, strong, b {
   display: none !important;
 }
 
+/* Resets */
+#simpliform .p-t-md {
+  padding-top: 16px !important;
+}
+
+.pagination-wrapper, .progress, #confirmation, .alert-danger {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#simpliform .form-group {
+  margin-bottom: 16px !important;
+}
+
 /* Headings */ 
 #simpliform .h1, 
 #simpliform .h2, 
@@ -71,7 +85,7 @@ p, strong, b {
 }
 
 #simpliform .step-title h3,
-#simpliform .confirmation h1 {
+#simpliform #confirmation h1.h4 {
   color: #76232f !important;
   font-size: 32px !important
 }
@@ -91,17 +105,19 @@ p, strong, b {
 
 #simpliform .dropzone {
   min-height: initial;
-}
-
-#simpliform .dropzone .dz-image {
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0px 0.7px 5.3px rgba(0, 0, 0, 0.028), 0px 2.2px 17.9px rgba(0, 0, 0, 0.042), 0px 10px 80px rgba(0, 0, 0, 0.07);
+  display: flex;
+  gap: 16px;
 }
 
 #simpliform .dropzone .dz-preview {
   display: grid;
   gap: 12px;
+}
+
+#simpliform .dropzone .dz-preview .dz-image {
+  border-radius: 4px !important;
+  background: #fff !important;
+  box-shadow: 0px 0.7px 5.3px rgba(0, 0, 0, 0.028), 0px 2.2px 17.9px rgba(0, 0, 0, 0.042), 0px 10px 80px rgba(0, 0, 0, 0.07);
 }
 
 #simpliform .panel .panel-body,
@@ -142,6 +158,11 @@ body #simpliform #confirmation .checkbox {
 #simpliform .pagination-wrapper .btn-primary svg,
 #simpliform .btn-success svg {
   display: none;
+}
+
+/* Description textarea */
+#simpliform textarea.form-control {
+  min-height: 120px;
 }
 
 /* Confirmation */
@@ -203,6 +224,13 @@ body #simpliform #confirmation {
   font-weight: normal;
 }
 
+#simpliform .alert {
+  line-height: 1.5em;
+}
+#simpliform .alert>p+p {
+  margin-top: 0;
+}
+
 #simpliform .alert .h5.no-m-t {
   margin-bottom: 0;
 }
@@ -216,26 +244,40 @@ body #simpliform #confirmation {
 #simpliform .alert a:active,
 #simpliform .alert a:visited {
   color: inherit;
+  text-decoration: underline;
 }
 
-/*
-.c-button {
+/* Success message */
+#simpliform  .success-message {
+  padding: calc(var(--base, 8px)*2) calc(var(--base, 8px)*3);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow:
+  0px 0.7px 5.3px rgba(0, 0, 0, 0.028),
+  0px 2.2px 17.9px rgba(0, 0, 0, 0.042),
+  0px 10px 80px rgba(0, 0, 0, 0.07);
+  margin-top: 32px;
+  background-color: #3d3d3d;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid;
-  padding: 4px 8px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-size: .95em;
-  transition: 200ms background-color;
-  white-space: nowrap;
+}
 
-  &:hover {
-    background-color: rgba(255,255,255,.2)
-  }
-}*/
+#simpliform .success-message .text-center {
+  text-align: left;
+}
 
+#simpliform .success-message a,
+#simpliform .success-message a:hover,
+#simpliform .success-message a:active,
+#simpliform .success-message a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Column reset */ 
 #simpliform .col-lg-1, 
 #simpliform .col-lg-10, 
 #simpliform .col-lg-11, 
@@ -292,46 +334,6 @@ body #simpliform #confirmation {
   margin-left: 0;
   margin-right: 0;
 }
-
-#simpliform .p-t-md {
-  padding-top: 16px !important;
-}
-
-.pagination-wrapper, .progress, #confirmation, .alert-danger {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#simpliform .form-group {
-  margin-bottom: 16px !important;
-}
-
-#simpliform .alert {
-  line-height: 1.5em;
-}
-#simpliform .alert>p+p {
-  margin-top: 0;
-}
-
-#simpliform .alert a {
-  text-decoration: underline;
-}
-
-
-
-
-
-/* Slutchecken */ 
-#simpliform #confirmation .checkbox {
-
-}
-
-/* Paperstyle */ 
-#simpliform .panel-body {
-
-}
-
-
 
 /* Header grid */ 
 #header {

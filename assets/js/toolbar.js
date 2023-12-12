@@ -71,13 +71,13 @@ class FormNavigationManager {
   static observeStepVisibility(targetNode) {
     // Callback function to handle mutations
     const mutationCallback = function (mutationsList, observer) {
-      const backButton = document.getElementById("toolbar");
+      const toolbar = document.getElementById("toolbar");
 
       mutationsList.forEach(mutation => {
         if (mutation.target.style.display !== "none") {
-          //backButton.classList.add("u-display--none");
+          toolbar.classList.add("u-display--none");
         } else {
-          backButton.classList.remove("u-display--none");
+          toolbar.classList.remove("u-display--none");
         }
       });
     };
