@@ -407,6 +407,7 @@ body #simpliform #confirmation {
   margin-bottom: -3px;
   text-decoration: none;
   color: #000;
+  animation: option-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #toolbar .c-button:after {
@@ -424,7 +425,32 @@ body #simpliform #confirmation {
   width: 90%;
 }
 
+#toolbar .c-button .c-button__label {
+  display: flex;
+  align-items: center;
+  line-height: 14px;
+  gap: 6px;
+}
+
 /* Utilities */ 
 .u-display--none {
   display: none !important;
+}
+
+/* Icons */ 
+.c-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-icon.c-icon--back {
+  background-image: url(../icons/back.svg);
+}
+
+.c-icon.c-icon--close {
+  background-image: url(../icons/close.svg);
 }
