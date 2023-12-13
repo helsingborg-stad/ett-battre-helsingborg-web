@@ -35,7 +35,7 @@ body {
 }
 
 body {
-  padding: 44px 16px;
+  padding: 64px 32px;
 }
 
 p, strong, b {
@@ -383,10 +383,11 @@ body #simpliform #confirmation {
 /* Toolbar */ 
 #toolbar {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 16px 24px;
+  padding: 16px 32px;
   position: fixed;
   top: 0;
   right: 0;
