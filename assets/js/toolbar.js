@@ -27,7 +27,7 @@ class FormNavigationManager {
     formsApi.onStepChange((from,to) => {
       const backButton = document.getElementById("back-button");
       if(backButton) {
-        if(to.index === 0){
+        if(to.index === 0 || (formsApi.steps.length) == to.index) {
           backButton.classList.add("u-display--none");
           backButton.setAttribute('aria-hidden', "true");
         } else {

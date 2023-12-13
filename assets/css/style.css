@@ -48,6 +48,10 @@ p, strong, b {
   /*display: block !important;*/ 
 }
 
+.step {
+  animation: step-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 /* Default hiddens */
 .pagination-wrapper {
   display: block;
