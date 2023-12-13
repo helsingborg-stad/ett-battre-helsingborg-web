@@ -48,7 +48,11 @@ class FormNavigationManager {
       cancelButton.addEventListener("click", function () {
         const userConfirmed = window.confirm("Är du säker på att du vill avbryta? All inmatad information förloras.");
         if (userConfirmed) {
-          parent.location.reload();
+          if(window.opener) {
+            opener.location.reload();
+          } else {
+            parent.location.reload();
+          }
         }
       });
     }
