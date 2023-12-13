@@ -37,13 +37,18 @@ class FormNavigationManager {
       }
     })
 
+    /* Scroll up on step change */
+    formsApi.onStepChange((from,to) => {
+      window.scrollTo(0, 0);
+    })
+
     /* Cancel button */
     const cancelButton = document.getElementById("cancel-button");
     if (cancelButton) {
       cancelButton.addEventListener("click", function () {
         const userConfirmed = window.confirm("Är du säker på att du vill avbryta? All inmatad information förloras.");
         if (userConfirmed) {
-          window.location.reload();
+          parent.location.reload();
         }
       });
     }
