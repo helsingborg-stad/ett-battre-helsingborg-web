@@ -422,7 +422,7 @@ body #simpliform #confirmation {
 }
 
 #toolbar .c-button:hover:after {
-  width: 90%;
+  width: 100%;
 }
 
 #toolbar .c-button .c-button__label {

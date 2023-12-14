@@ -12,7 +12,7 @@ class FormNavigationManager {
     // LimeForms API instance
     const formsApi = window.limeForms.getApi();
 
-    /** Back button */
+    /* Back button */
     formsApi.onReady(() => {
       const backButton = document.getElementById("back-button");
       if(backButton) {
