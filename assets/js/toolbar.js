@@ -9,8 +9,14 @@ class FormNavigationManager {
    * @listens window#load
    */
   static initialize() {
-    // LimeForms API instance
+    
+    /* Load simpliforms */
     const formsApi = window.limeForms.getApi();
+
+    /* Always start scoll 0 */
+    formsApi.onReady(() => {
+      window.scrollTo(0, 0);
+    });
 
     /* Back button */
     formsApi.onReady(() => {
