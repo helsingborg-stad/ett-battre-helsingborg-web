@@ -13,55 +13,57 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animations.css" media="all">  
   </head>
 <body>
-
-  <div id="header">
-    <div id="app-banner" class="c-notice u-display--none" aria-hidden="true">
-      <span class="c-notice__text">
-        Ladda ner Ett Bättre Helsingborg till mobilen.
-      </span>
-      <a id="app-banner-link" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#getapp" aria-label="Hämta app">
-        <span class="c-button__label">
-          <span class="c-button__label-text">Hämta app</span>
+  <div id="app">
+    
+    <div id="header">
+      <div id="app-banner" class="c-notice u-display--none" aria-hidden="true">
+        <span class="c-notice__text">
+          Ladda ner Ett Bättre Helsingborg till mobilen.
         </span>
-      </a>
+        <a id="app-banner-link" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#getapp" aria-label="Hämta app">
+          <span class="c-button__label">
+            <span class="c-button__label-text">Hämta app</span>
+          </span>
+        </a>
+      </div>
+
+      <div id="toolbar" class="c-toolbar">
+        
+        <!-- Cancel button-->
+        <a id="cancel-button" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#cancel" aria-label="Avbryt">
+          <span class="c-button__label">
+            <span class="c-button__icon">
+              <span class="c-icon c-icon--close"></span>
+            </span>
+            <span class="c-button__label-text">Avbryt</span>
+          </span>
+        </a>
+
+        <!-- Close button-->
+        <a id="close-button" class="c-button c-button__filled c-button__filled--primary u-display--none" target="_top" type="button" href="#close" aria-label="Stäng"  aria-hidden="true">
+          <span class="c-button__label">
+            <span class="c-button__icon">
+              <span class="c-icon c-icon--close"></span>
+            </span>
+            <span class="c-button__label-text">Stäng</span>
+          </span>
+        </a>
+
+        <!-- Back button -->
+        <a id="back-button" class="c-button c-button__filled c-button__filled--primary u-display--none" target="_top" type="button" href="#back" aria-label="Gå till förgående" aria-hidden="true">
+          <span class="c-button__label">
+            <span class="c-button__icon">
+              <span class="c-icon c-icon--back"></span>
+            </span>
+            <span class="c-button__label-text">Tillbaka</span>
+          </span>
+        </a>
+
+      </div>
     </div>
 
-    <div id="toolbar" class="c-toolbar">
-      
-      <!-- Cancel button-->
-      <a id="cancel-button" class="c-button c-button__filled c-button__filled--primary" target="_top" type="button" href="#cancel" aria-label="Avbryt">
-        <span class="c-button__label">
-          <span class="c-button__icon">
-            <span class="c-icon c-icon--close"></span>
-          </span>
-          <span class="c-button__label-text">Avbryt</span>
-        </span>
-      </a>
-
-      <!-- Close button-->
-      <a id="close-button" class="c-button c-button__filled c-button__filled--primary u-display--none" target="_top" type="button" href="#close" aria-label="Stäng"  aria-hidden="true">
-        <span class="c-button__label">
-          <span class="c-button__icon">
-            <span class="c-icon c-icon--close"></span>
-          </span>
-          <span class="c-button__label-text">Stäng</span>
-        </span>
-      </a>
-
-      <!-- Back button -->
-      <a id="back-button" class="c-button c-button__filled c-button__filled--primary u-display--none" target="_top" type="button" href="#back" aria-label="Gå till förgående" aria-hidden="true">
-        <span class="c-button__label">
-          <span class="c-button__icon">
-            <span class="c-icon c-icon--back"></span>
-          </span>
-          <span class="c-button__label-text">Tillbaka</span>
-        </span>
-      </a>
-
-    </div>
+    <lime-form form-id="U3X0lhXaQ4B2dBs2rk5K"></lime-form>
   </div>
-
-  <lime-form form-id="U3X0lhXaQ4B2dBs2rk5K"></lime-form>
 
   <script>
     if(window.location !== window.parent.location) {
@@ -76,6 +78,5 @@
       }).observe(document.body);
     }
   </script>
-
 </body>
 </html>
