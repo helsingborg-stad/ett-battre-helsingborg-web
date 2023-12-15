@@ -10,7 +10,7 @@
     <script src="assets/js/toolbar.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css" media="all">
-    <link rel="stylesheet" type="text/css" href="assets/css/animations.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/animations.css" media="all">  
   </head>
 <body>
 
@@ -62,5 +62,20 @@
   </div>
 
   <lime-form form-id="U3X0lhXaQ4B2dBs2rk5K"></lime-form>
+
+  <script>
+    if(window.location !== window.parent.location) {
+      document.querySelector("html, body").style.height = "auto";
+      const sendMessageToParent = () => {
+        window.parent.postMessage({
+          height: document.body.clientHeight
+        }, '*');
+      };sendMessageToParent();
+      new ResizeObserver(() => {
+        sendMessageToParent();
+      }).observe(document.body);
+    }
+  </script>
+
 </body>
 </html>

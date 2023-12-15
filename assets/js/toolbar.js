@@ -45,6 +45,9 @@ class FormNavigationManager {
 
     /* Form complete - Hide back button */ 
     formsApi.onSubmitted(() => {
+
+      //Scroll to top
+      window.scrollTo(0, 0);
       
       // Hide back button
       const backButton = document.getElementById("back-button");
