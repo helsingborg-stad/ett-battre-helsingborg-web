@@ -95,7 +95,8 @@ class FormNavigationManager {
     /* Cancel button */
     const cancelButton = document.getElementById("cancel-button");
     if (cancelButton) {
-      cancelButton.addEventListener("click", function () {
+      cancelButton.addEventListener("click", function (e) {
+        e.preventDefault();
         const userConfirmed = window.confirm("Är du säker på att du vill avbryta? All inmatad information förloras.");
         if (userConfirmed == true) {
           reloadPage(
@@ -108,7 +109,8 @@ class FormNavigationManager {
     /* Close button */ 
     const closeButton = document.getElementById("close-button");
     if (closeButton) {
-      closeButton.addEventListener("click", function () {
+      closeButton.addEventListener("click", function (e) {
+        e.preventDefault();
         reloadPage(
           new URLSearchParams(window.location.search).get("closeUrl") ?? null
         );
