@@ -65,6 +65,17 @@ class MobileAppManager {
     }
     return "#nolink";
   }
+
+  /**
+   * Returns the appropriate app URL based on the mobile operating system.
+   * @returns {string} - The app URL.
+   */
+  static formId() {
+    if (this.isApp()) {
+      return 'vEKRiB3le1BSsgo18HW2';
+    }
+    return 'U3X0lhXaQ4B2dBs2rk5K'; 
+  }
 }
 
 /* Display app banner */
@@ -95,13 +106,13 @@ window.addEventListener("load", function () {
   // Clone the template content
   const template = document.getElementById('lime-form-template');
   const clone = document.importNode(template.content, true);
-
+  
   // Set form id for App or Web
   const targetElement = clone.querySelector('#lime-form');
   if (targetElement) {
     targetElement.setAttribute(
       'form-id', 
-      MobileAppManager.isApp() ? 'vEKRiB3le1BSsgo18HW2' : 'U3X0lhXaQ4B2dBs2rk5K'
+      MobileAppManager.formId()
     );
   }
 
