@@ -33,6 +33,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.is-app .hidden-app {
+  display: none !important;
+}
+
 #app {
   padding: 64px 32px;
 }

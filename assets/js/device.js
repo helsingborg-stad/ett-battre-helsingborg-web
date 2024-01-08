@@ -44,6 +44,15 @@ class MobileAppManager {
   }
 
   /**
+   * Checks if the query parameter ?app=1 is present in the current URL.
+   * @returns {boolean} - True if the query parameter is set to 1, false otherwise.
+   */
+  static isApp() {
+    const queryParams = new URLSearchParams(window.location.search);
+    return queryParams.get('app') === '1';
+  }
+
+  /**
    * Returns the appropriate app URL based on the mobile operating system.
    * @returns {string} - The app URL.
    */
@@ -71,5 +80,13 @@ window.addEventListener("load", function () {
   const targetElement = document.getElementById("app-banner-link");
   if (targetElement) {
     MobileAppManager.setLink(targetElement);
+  }
+});
+
+/* Add class if is app to hide element from app version */
+window.addEventListener("load", function () {
+  const targetElement = document.querySelector('body');
+  if (targetElement && MobileAppManager.isApp()) {
+    targetElement.classList.add('is-app');
   }
 });
