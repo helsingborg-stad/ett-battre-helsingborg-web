@@ -256,6 +256,7 @@ body #simpliform #confirmation .checkbox {
 #simpliform .alert a:visited {
   color: inherit;
   text-decoration: underline;
+  font-weight: normal;
 }
 
 /* Success message */
@@ -285,6 +286,16 @@ body #simpliform #confirmation .checkbox {
 #simpliform .success-message a:visited {
   color: inherit;
   text-decoration: underline;
+  font-weight: normal;
+}
+
+#simpliform .alert-danger a,
+#simpliform .alert-danger a:hover,
+#simpliform .alert-danger a:active,
+#simpliform .alert-danger a:visited {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: normal;
 }
 
 /* Column reset */ 
