@@ -90,3 +90,24 @@ window.addEventListener("load", function () {
     targetElement.classList.add('is-app');
   }
 });
+
+window.addEventListener("load", function () {
+  // Clone the template content
+  const template = document.getElementById('lime-form-template');
+  const clone = document.importNode(template.content, true);
+
+  // Set form id for App or Web
+  const targetElement = clone.querySelector('#lime-form');
+  if (targetElement) {
+    targetElement.setAttribute(
+      'form-id', 
+      MobileAppManager.isApp() ? 'vEKRiB3le1BSsgo18HW2' : 'U3X0lhXaQ4B2dBs2rk5K'
+    );
+  }
+
+  // Append the manipulated template to the #app div
+  const appElement = document.getElementById('app');
+  if (appElement) {
+    appElement.appendChild(clone);
+  }
+});
