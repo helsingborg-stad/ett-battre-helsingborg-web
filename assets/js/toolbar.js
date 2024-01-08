@@ -86,19 +86,10 @@ class FormNavigationManager {
     /* Reload function */
     const reloadPage = function (url) {
       if (url && isValidUrl(url)) {
-        window.location.href = url;
+        (opener || parent || window).location.href = url;
         return;
       }
-
-      if (opener) {
-        opener.location.reload();
-        return;
-      }
-      
-      if(parent) {
-        parent.location.reload();
-        return;
-      }
+      (opener || parent || window).location.reload();
     };
 
     /* Cancel button */
