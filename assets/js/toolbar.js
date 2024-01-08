@@ -77,17 +77,39 @@ class FormNavigationManager {
       window.scrollTo(0, 0);
     })
 
+    /* Validate URL function */
+    const isValidUrl = function (url) {
+      const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w.-]*)*\/?$/;
+      return urlRegex.test(url);
+    };
+
+    /* Reload function */
+    const reloadPage = function (url) {
+      if (url && isValidUrl(url)) {
+        window.location.href = url;
+        return;
+      }
+
+      if (opener) {
+        opener.location.reload();
+        return;
+      }
+      
+      if(parent) {
+        parent.location.reload();
+        return;
+      }
+    };
+
     /* Cancel button */
     const cancelButton = document.getElementById("cancel-button");
     if (cancelButton) {
       cancelButton.addEventListener("click", function () {
         const userConfirmed = window.confirm("Är du säker på att du vill avbryta? All inmatad information förloras.");
-        if (userConfirmed) {
-          if(opener) {
-            opener.location.reload();
-          } else {
-            parent.location.reload();
-          }
+        if (userConfirmed == true) {
+          reloadPage(
+            new URLSearchParams(window.location.search).get("closeUrl") ?? null
+          );
         }
       });
     }
@@ -96,11 +118,9 @@ class FormNavigationManager {
     const closeButton = document.getElementById("close-button");
     if (closeButton) {
       closeButton.addEventListener("click", function () {
-        if(opener) {
-          opener.location.reload();
-        } else {
-          parent.location.reload();
-        }
+        reloadPage(
+          new URLSearchParams(window.location.search).get("closeUrl") ?? null
+        );
       });
     }
   }
