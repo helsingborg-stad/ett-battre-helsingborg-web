@@ -37,8 +37,12 @@ body.is-app .hidden-app {
   display: none !important;
 }
 
+body.is-app #app {
+  padding-top: 32px;
+}
+
 #app {
-  padding: 64px 32px;
+  padding: 64px 32px 32px 32px; /* 64px for top bar */
 }
 
 p, strong, b {
