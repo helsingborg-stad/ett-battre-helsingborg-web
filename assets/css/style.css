@@ -42,7 +42,7 @@ body.is-app #app {
 }
 
 #app {
-  padding: 64px 32px 32px 32px; /* 64px for top bar */
+  padding: 88px 32px 32px 32px; /* 88px for top bar */
 }
 
 p, strong, b {
@@ -97,6 +97,7 @@ p, strong, b {
 #simpliform h6 {
   font-family: 'helsingborg-sans-medium', sans-serif;
   font-weight: 700 !important;
+  margin-top: 0 !important;
 }
 
 #simpliform .step-title h3,
@@ -178,11 +179,6 @@ body #simpliform #confirmation .checkbox {
 /* Description textarea */
 #simpliform textarea.form-control {
   min-height: 120px;
-}
-
-/* Confirmation */
-body #simpliform #confirmation {
-  margin-top: 32px;
 }
 
 /* Location step */
@@ -275,7 +271,6 @@ body #simpliform #confirmation {
   0px 0.7px 5.3px rgba(0, 0, 0, 0.028),
   0px 2.2px 17.9px rgba(0, 0, 0, 0.042),
   0px 10px 80px rgba(0, 0, 0, 0.07);
-  margin-top: 32px;
   background-color: #3d3d3d;
   color: #fff;
 }
