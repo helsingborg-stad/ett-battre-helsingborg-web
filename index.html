@@ -69,17 +69,15 @@
   </div>
 
   <script>
-    if(window.location !== window.parent.location) {
-      document.querySelector("html, body").style.height = "auto";
-      const sendMessageToParent = () => {
-        window.parent.postMessage({
-          height: document.body.clientHeight
-        }, '*');
-      };sendMessageToParent();
-      new ResizeObserver(() => {
-        sendMessageToParent();
-      }).observe(document.body);
-    }
+    document.querySelector("html, body").style.height = "auto";
+    const sendMessageToParent = () => {
+      window.parent.postMessage({
+        height: document.body.clientHeight
+      }, '*');
+    };sendMessageToParent();
+    new ResizeObserver(() => {
+      sendMessageToParent();
+    }).observe(document.body);
   </script>
 </body>
 </html>
