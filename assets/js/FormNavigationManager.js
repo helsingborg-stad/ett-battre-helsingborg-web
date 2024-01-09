@@ -13,6 +13,12 @@ class FormNavigationManager {
     FormNavigationStepChange.setupStepChange(formsApi);
     FormNavigationSubmitted.setupSubmitted(formsApi);
     FormNavigationButtons.setupCancelAndCloseButtons();
+
+    formsApi.onReady(function() {
+      setTimeout(function() {
+        document.querySelector(".loader").remove(); 
+      }, 1000);
+    }); 
   }
 }
 
