@@ -1,7 +1,7 @@
 import AppBanner from './AppBanner';
 import AppForm from './AppForm';
 
+AppBanner.initialize();
 window.addEventListener("load", function () {
-  AppBanner.initialize();
   AppForm.initialize(); //Inits navigation
 });
