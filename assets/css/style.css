@@ -378,6 +378,7 @@ body #simpliform #confirmation .checkbox {
   0px 0.7px 5.3px rgba(0, 0, 0, 0.028),
   0px 2.2px 17.9px rgba(0, 0, 0, 0.042),
   0px 10px 80px rgba(0, 0, 0, 0.07);
+  margin-bottom: 32px;
 }
 
 #app-banner .c-button {
