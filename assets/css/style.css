@@ -221,13 +221,25 @@ body #simpliform #confirmation .checkbox {
   0px 10px 80px rgba(0, 0, 0, 0.07);
 }
 
+#simpliform .alert ul {
+  padding-left: 1.2em;
+}
+
 #simpliform .alert.alert-info {
-  background-color: #3d3d3d;
-  color: #fff;
+  background-color: #DCF4FE;
+  color: #000;
+}
+
+#simpliform .alert.alert-info a.alert-link {
+  color: #000;
 }
 
 #simpliform .alert.alert-danger {
   background-color: #d73740;
+  color: #fff;
+}
+
+#simpliform .alert.alert-danger a.alert-link {
   color: #fff;
 }
 
