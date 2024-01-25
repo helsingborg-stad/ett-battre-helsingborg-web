@@ -1,7 +1,7 @@
 const AppData = {
   urls: {
-    ios: "https://apple.com",
-    android: "https://google.com",
+    ios: "https://apps.apple.com/se/app/ett-b%C3%A4ttre-helsingborg/id1061079182",
+    android: "https://play.google.com/store/apps/details?id=se.helsingborg.EttBattreHelsingborg&hl=sv",
     noLink: "#nolink",
   },
   formIds: {
