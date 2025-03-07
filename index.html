@@ -5,11 +5,19 @@
     <title>Ett Bättre Helsingborg - Web Application</title>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <script src="https://helsingborgs-stad-sbf.lime-forms.se/js/ce/latest"></script>
     <script src="dist/app.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css" media="all">
     <link rel="stylesheet" type="text/css" href="assets/css/animations.css" media="all">  
+    <script>
+      (() => {
+        const customer = new URLSearchParams(location.search).get("customer")?.replace(/[^\w\.\-]/g, "") || "helsingborgs-stad-sbf";
+        document.head.appendChild(Object.assign(document.createElement("script"), {
+          src: `https://${customer}.lime-forms.se/js/ce/latest`,
+          type: "text/javascript"
+        }));
+      })();
+    </script>
   </head>
 <body>
   <div class="loader"></div>
