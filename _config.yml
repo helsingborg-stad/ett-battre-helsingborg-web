@@ -1,0 +1,10 @@
+# Files that GitHub Pages (Jekyll) should not publish.
+# Dotfiles (.git, .github, .gitignore etc.) are excluded by Jekyll by default.
+exclude:
+- Dockerfile
+- README.md
+- LICENSE
+- nginx-jelastic.conf
+- package.json
+- package-lock.json
+- webpack.config.js
