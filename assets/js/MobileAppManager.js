@@ -3,10 +3,15 @@ import AppData from './AppData';
 class MobileAppManager {
   static setClassAndAria(element) {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (this.isAndroid(userAgent) || this.isIOS(userAgent)) {
+    if (this.shouldShowAppNag() && (this.isAndroid(userAgent) || this.isIOS(userAgent))) {
       element.classList.remove("u-display--none");
       element.removeAttribute("aria-hidden");
     }
+  }
+
+  static shouldShowAppNag() {
+    const queryParams = new URLSearchParams(window.location.search);
+    return queryParams.get('appNag') !== 'none';
   }
 
   static setLink(element) {
